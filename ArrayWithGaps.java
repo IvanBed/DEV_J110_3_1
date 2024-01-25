@@ -6,7 +6,7 @@ package ru.avalon.dev_110_1_ver2;
 
 /**
  *
- * @author Ivan
+ * @author Ivan3
  */
 public class ArrayWithGaps {
 
