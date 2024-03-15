@@ -11,9 +11,7 @@ package ru.avalon.dev_110_1_ver2;
 public class LinkedListMultiTread {
     
     Planet head = new Planet();
-    
-    
-    
+   
     public static class Planet {
     
         String name;
@@ -99,9 +97,5 @@ public class LinkedListMultiTread {
         }
 
     }
-
-    
-    
-    
     
 }
