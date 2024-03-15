@@ -25,8 +25,7 @@ public class StackMassive {
 
     public void push(int value) {
         if (top == arrayForStack.length - 1) {
-            System.out.println("Stack is overflown");
-            
+            System.out.println("Stack is overflown");            
             return;
         }
         arrayForStack[top] = value;
@@ -37,8 +36,7 @@ public class StackMassive {
     public int pop() {
         this.top--;
         int result = arrayForStack[top];
-        sizeOfStack--;
-        
+        sizeOfStack--;        
         return result;
 
     }
@@ -50,7 +48,6 @@ public class StackMassive {
                 return;
             }
         }
-
     }
 
     public void insertSort(StackMassive stack) {
@@ -62,22 +59,16 @@ public class StackMassive {
            temp = stack.pop();
             for (int i = top; i > j; i--) {
                 tempStack.push(stack.pop());
-
             }
             top = j;
-         
             for (int k = j; k  > 0; k--) {
                  int temp2 =  stack.pop();
                 if (stack.pop()<temp){
                 stack.push(temp2);
                 stack.push(temp);
-                } else{}
-                    
-                 
+                }                 
             }
-
         }
-
     }
     
     public void selectSort(StackMassive stack) {
@@ -106,6 +97,5 @@ public class StackMassive {
             }
         }
     }
-
-    
+   
 }
