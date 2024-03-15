@@ -25,7 +25,6 @@ public class LinkedListDouble {
         private int value;
 
         public Item() {
-
         }
 
         public Item(int value) {
@@ -82,10 +81,8 @@ public class LinkedListDouble {
         while (currentItem.next != tail.prev) {
             currentItem = currentItem.next;
             if (currentItem.value > currentItem.next.value) {
-
                 return false;
             }
-
         }
         return true;
     }
@@ -100,10 +97,7 @@ public class LinkedListDouble {
         newItem.prev = currentItem;
         currentItem.next.prev = newItem;
         currentItem.next = newItem;
-
     }
-
-
     
     public void sortSelect() {
         Item currentItem = head;
@@ -129,13 +123,6 @@ public class LinkedListDouble {
         }
     }
 
-    
-     
-            
-  
-
-
-    
     public void sortInsert() {
         Item currentItem = head;
 
@@ -157,29 +144,11 @@ public class LinkedListDouble {
                 tempItem.prev = itemBack;
                 itemBack.next.prev = tempItem;
                 itemBack.next = tempItem;
-
-        
-            }
-
-        }
-
-    }
-
-
    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+            }
+        }
+    }
+ 
     public void deleteFromTail (){
         tail.prev.prev.next = tail;
         tail.prev =tail.prev.prev;
