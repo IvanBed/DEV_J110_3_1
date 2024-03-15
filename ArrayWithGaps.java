@@ -76,10 +76,7 @@ public class ArrayWithGaps {
                 Item tail = currentRow.tailItem;
                 while (currenItem.next != tail) {
                     currenItem = currenItem.next;
-                    /* if (currenItem.indexOfColum == indexOfColum){  
-                    currenItem.value = vlaue; return;
-                    }*/
-
+            
                 }
                 newItem.indexOfColum = currenItem.indexOfColum + 1;
                 currenItem.next.prev = newItem;
